@@ -23,7 +23,7 @@ var out = {
 		file: 'app.min.js',
 		folder: build + 'scripts/'
 	}
-}
+};
 
 gulp.task('html', function() {
 	return gulp.src(src.html)
@@ -88,7 +88,7 @@ gulp.task('watch', function() {
 	gulp.watch(src.libs, ['libs']);
 	gulp.watch(src.html, ['html']);
 	gulp.watch(src.scripts.all, ['scripts']);
-})
+});
 
 gulp.task('build', ['scripts', 'html', 'libs']);
 gulp.task('default', ['serve']);
